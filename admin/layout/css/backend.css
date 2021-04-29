@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+.admin {
+  background-color: rgba(39, 38, 38, 0.8);
+  color: #fff;
+}
+
+.pic {
+  width: 150px;
+  margin-left: 30%;
+  border-radius: 45px;
+}
+
+.back {
+  background-image: url(../images/online.jpg);
+  height: 625px;
+  width: 100%;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+/*start navbar */
+
+.nav-link {
+  font-size: 1em;
+}
+
+.dropdown {
+  margin-right: 40px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .dropdown-menu {
+  background-color: #929292;
+  min-width: 180px;
+  font-size: 1em;
+  border: none;
+  border-radius: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover, .dropdown-menu {
+  color: black;
+  background-color: #929292;
+}
+
+/*end navbar*/
+
+/*show password*/
+
+.show-pass {
+  position: absolute;
+  bottom: 77px;
+  right: 30px;
+}
+
+.card-header {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.table {
+  padding: 0px;
+  box-shadow: 0px 13px 10px #ccc;
+}
+
+.table td, .table th {
+  vertical-align: middle !important;
+}
+
+.fa-edit:before, .fa-pencil-square-o:before {
+  position: relative;
+  top: 1px;
+  padding-right: 2px;
+}
+
+.fa-remove:before, .fa-trash:before, .fa-times:before {
+  padding-right: 2px;
+}
+
+/**dashbored*page*/
+
+.num {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.t-members {
+  background-color: #22a6b3;
+  color: #000;
+  vertical-align: middle;
+}
+
+.user-img {
+  width: 50px;
+  height: 50px;
+}
+
+.pending {
+  background-color: #009432;
+  color: #000;
+  vertical-align: middle;
+}
+
+.t-item {
+  background-color: #ffc312;
+  color: #000;
+  vertical-align: middle;
+}
+
+.t-comments {
+  background-color: #ea2027;
+  color: #000;
+  vertical-align: middle;
+}
+
+.state a {
+  color: #000;
+  text-decoration: none;
+  transition: all 1s;
+}
+
+.state a:hover {
+  color: #fff;
+}
+
+.card-body h5 {
+  font-size: 18px;
+}
+
+.card-body .icon {
+  font-size: 60px;
+  transition: all 1s ease;
+}
+
+.card-body .icon:hover {
+  transform: scale(1.2);
+}
+
+.card .card-header {
+  font-size: 20px;
+}
+
+/*lastes*/
+
+.lasted-user li {
+  padding: 5px 0;
+  overflow: hidden;
+}
+
+.lasted-user li:nth-child(odd) {
+  background-color: #eeeeee;
+}
+
+.lasted-user .btn-success, .btn-info {
+  padding: 3px;
+}
+
+.toggle-info, .toggle-info1 {
+  color: #fff;
+  cursor: pointer;
+}
+
+.toggle-info:hover {
+  color: #999;
+}
+
+.toggle-info1:hover {
+  color: #999;
+}
+
+.comment-box {
+  margin: 5px 0 10px;
+}
+
+.comment-box .member-n, .comment-box .member-c {
+  float: left;
+}
+
+.comment-box .member-n {
+  width: 140px;
+  margin-right: 20px;
+  text-align: center;
+  margin-top: 4px;
+  background-color: #4b4b4b;
+  padding: 5px;
+  border-radius: 20px;
+  color: whitesmoke;
+}
+
+.comment-box .member-c {
+  width: calc(100% - 160px);
+  padding: 15px;
+  background-color: #efefef;
+  position: relative;
+}
+
+.comment-box .member-c:before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 25px;
+  top: 4px;
+  left: -27px;
+  border-style: solid;
+  border-color: transparent #efefef transparent transparent;
+  border-width: 15px;
+  position: absolute;
+}
+
+/*lastes*/
+
+.btn-info {
+  margin-right: 3px;
+}
+
+/*category*/
+
+.show-link {
+  display: none;
+}
+
+.cats {
+  border: 1px solid rgba(201, 184, 184, 0.8);
+  position: relative;
+  overflow: hidden;
+}
+
+.visability {
+  background-color: #f0932b;
+  color: #000;
+  padding: 3px 10px;
+  border-radius: 6px;
+  margin-right: 3px;
+  cursor: pointer;
+}
+
+.comment {
+  background-color: #82ccdd;
+  color: #000000;
+  padding: 3px 10px;
+  border-radius: 6px;
+  margin-right: 3px;
+  cursor: pointer;
+}
+
+.Advertiser {
+  background-color: #b71540;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 6px;
+  margin-right: 3px;
+  cursor: pointer;
+}
+
+.hidden-button {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  top: 3px;
+  right: -120px;
+}
+
+.cats:hover .hidden-button {
+  right: 10px;
+}
+
+.ordering a {
+  text-decoration: none;
+  color: #888;
+}
+
+.ordering .active {
+  color: red;
+  font-weight: bold;
+}
+
+/* edit category*/
+
+.check input {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+/*edit items*/
+
+/*Message If Empty*/
+
+.nice-message {
+  margin: 5px 10px;
+  padding: 10px;
+  background-color: #eee;
+  border-left: 5px solid green;
+}
+
+/*Message If Empty in home */
+
+.nice-message1 {
+  padding: 10px;
+  background-color: #eee;
+  border-left: 5px solid green;
+}
+
+/*export*/
